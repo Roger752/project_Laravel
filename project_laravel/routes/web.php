@@ -17,5 +17,8 @@
  */
 
 Route::get('/', function() {
-    return view('testing.testing');
+    return view('testing.testing')->with([
+        'name'=>'Foo',
+        'greeting'=>'hello',
+    ]);
 });
